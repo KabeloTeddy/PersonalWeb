@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="icon" href="/call.png" type="image/x-icon">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <style>
+      body {
+	
+  background-image: url("front.jpg");
+        background-repeat: no-repeat;
+        background-attachment:fixed; 
+         background-size:100% 100%;
+        }
+      .fb {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  
+}
+
+
+  
+
+p.dotted {
+  border-left-style: dotted;
+  border-right-style: dotted;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  margin: 15px 10px  100px;
+  border-radius: 12px;
+  padding: 10px;
+  border-color: rgb(194, 100, 63);
+}
+p.dotted2 {
+  border-left-style: dotted;
+  border-right-style: dotted;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  margin: 15px 10px  100px;
+  border-radius: 15px;
+  padding: 10px;
+  border-color: #BFF098;
+}
+ 
+p.dotted3 {
+  border-left-style: dotted;
+  border-right-style: dotted;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  margin: 15px 10px  100px;
+  border-radius: 15px;
+  padding: 10px;
+  border-color: #EA8D8D;
+}
+pcomp{
+  color:currentColor;  
+  text-shadow: 0 0 0 rgb(255, 255, 255);
+}
+div.ord{
+         text-align: center;
+       }
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/varelaround/v18/w8gdH283Tvk__Lua32TysjIfp8uK.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+:root {
+  --accent-color: #45494E;
+  --gradient-color: #FBFBFB;
+}
+a:focus {
+  outline: none;
+  position: relative;
+}
+a:focus:after {
+  width: 50px;
+}
+a:after {
+  content: "";
+  background: #FBFBFB;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  height: 3px;
+  width: 0;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+
+
+      body {
+	
+ /*background: #45494E;*/
+ font-family: "Varela Round", Nunito, Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.menu {
+  margin: 90px;
+}
+
+.example2 {
+ height: 100px;	
+ overflow: hidden;
+ position: relative;
+}
+.example2 h1 {
+ position: absolute;
+ width: 60%;
+ height: 60%;
+ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ margin: 0;
+ line-height: 100px;
+ text-align: center;
+ font-weight: 500;
+ color: #ddd;
+
+ /* Apply animation to this element */	
+ animation: example2 8s ease-out;
+}
+/* Move it (define the animation) */
+@keyframes example2 {
+ 0%   { 
+ transform: translateX(200%); 		
+ }
+ 100% { 
+ transform: translateX(0%); 
+ }
+}
+.menu > ol {
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+}
+.menu > ol > li {
+  background: #3c3c3c;
+  border-left: 5px solid var(--gradient-color);
+  margin-bottom: 1px;
+  position: relative;
+  transition: 0.5s;
+}
+.menu > ol > li:nth-child(1) {
+  --accent-color: #FDA085;
+  --gradient-color: #F6D365;
+}
+.menu > ol > li:nth-child(2) {
+  --accent-color: #BFF098;
+  --gradient-color: #6FD6FF;
+}
+.menu > ol > li:nth-child(3) {
+  --accent-color: #EA8D8D;
+  --gradient-color: #A890FE;
+}
+.menu > ol > li:nth-child(4) {
+  --accent-color: #D8B5FF;
+  --gradient-color: #1EAE98;
+}
+.menu > ol > li:nth-child(5) {
+  --accent-color: #C6EA8D;
+  --gradient-color: #FE90AF;
+}
+.menu > ol > li a {
+  color: #FBFBFB;
+  display: block;
+  padding: 15px;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+}
+.menu > ol > li a:not(:last-child):before {
+  content: "\f078";
+  font-family: fontAwesome;
+  font-size: 0.75em;
+  line-height: 50px;
+  position: absolute;
+  right: 25px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 0.9s;
+}
+.menu > ol > li:focus,
+.menu > ol > li:focus-within,
+.menu > ol > li:hover {
+  z-index: 100;
+}
+.menu > ol > li:focus:after,
+.menu > ol > li:focus-within:after,
+.menu > ol > li:hover:after {
+  background: linear-gradient(to left, var(--accent-color), var(--gradient-color));
+  max-width: 700px;
+}
+.menu > ol > li:focus .sub-menu,
+.menu > ol > li:focus-within .sub-menu {
+  max-height: 500px;
+}
+.menu > ol > li:focus a:before,
+.menu > ol > li:focus-within a:before {
+  transform: rotate(-180deg);
+}
+.menu > ol > li:after {
+  background: #3c3c3c;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: 0.9s;
+  max-width: 0;
+  overflow: hidden;
+}
+.menu > ol .sub-menu {
+  border-left: 1px solid #FBFBFB;
+  margin-left: 22.5px;
+  list-style: none;
+  max-height: 0px;
+  overflow: hidden;
+  padding-left: 7.5px;
+  position: relative;
+  transition: 0.5s;
+  z-index: 1;
+}
+.menu > ol .sub-menu li {
+  font-size: 0.9em;
+}
+.menu > ol .sub-menu li:hover,
+.menu > ol .sub-menu li a:focus {
+  background: rgba(60, 60, 60, 0.3);
+}
+.menu > ol .sub-menu li a:after {
+  bottom: 5px;
+  height: 1px;
+}
+.menu > ol .sub-menu li a:hover:after,
+.menu > ol .sub-menu li a:focus:after {
+  width: 15px;
+}
+@media (min-width: 600px) {
+  a:focus,
+  a:hover {
+    position: relative;
+  }
+  a:focus:after,
+  a:hover:after {
+    width: 50px;
+  }
+  a:after {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .menu {
+    margin: 0;
+    margin-top: 2vh;
+  }
+  .menu > ol {
+    display: block;
+    max-width: none;
+    text-align: center;
+  }
+  .menu > ol > li {
+    border-top: 5px solid var(--accent-color);
+    border-left: 0;
+    display: inline-block;
+    margin-left: -5px;
+    vertical-align: top;
+    width: 120px;
+  }
+  .menu > ol > li:hover:after,
+  .menu > ol > li:focus:after,
+  .menu > ol > li:focus-within:after {
+    background: linear-gradient(to bottom, var(--accent-color), var(--gradient-color));
+    border-radius: 3px;
+    top: -15px;
+    bottom: -15px;
+    left: -15px;
+    right: -15px;
+  }
+  .menu > ol > li:hover .sub-menu,
+  .menu > ol > li:focus .sub-menu,
+  .menu > ol > li:focus-within .sub-menu {
+    max-height: 750px;
+  }
+  .menu > ol > li a:not(:last-child):before {
+    right: 12.5px;
+  }
+  .menu > ol > li:hover a:before {
+    transform: rotate(-180deg);
+  }
+  .menu > ol .sub-menu {
+    border-left: 0;
+    margin: 15px -15px -15px;
+    padding-left: 0;
+  }
+}
+@media (min-width: 775px) {
+  .menu > ol > li {
+    width: 170px;
+  }
+  .menu > ol > li a:not(:last-child):before {
+    right: 25px;
+  }
+  
+  
+  @import "compass/css3";
+
+::-webkit-scrollbar
+{
+  width: 0px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+
+
+#wrapper{
+  width: 900px;
+  margin: 100px auto;
+  height: 60%;
+  margin: 190px;
+  padding: 0;
+  background: #eaf6f6;
+  font-family: helvetica;
+}
+
+/* cube wrapper */
+
+
+.cube-wrapper{
+  position: center;
+  -webkit-perspective: 500;
+  -webkit-perspective-origin: 50% 100px;
+}
+
+/* keyframes for rotating annimation */
+
+
+@-webkit-keyframes spin{
+  from{ -webkit-transform: rotateY(0); }
+  to{ -webkit-transform: rotateY(360deg);   }
+}
+
+.cube{
+  position: center;
+  margin: 0 auto;
+  width: 200px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: spin 4s infinite       linear;
+  -webkit-transition: all 1s linear;
+}
+
+
+/* cube sides */
+
+
+.side{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: block;
+  background: rgba(255,255,255,0.1);
+  box-shadow: inset 0 0 30px            rgba(0,0,0,0.2);
+  font-size: 30px;
+  text-align: center;
+  line-height: 200px;
+  color: #FFFFFF;
+  text-transform: uppercase; -webkit-transition: all 1s linear;
+  
+}
+
+.back{
+  -webkit-transform: translateZ(-100px)rotateY(180deg);
+}
+
+.right{
+  -webkit-transform: rotateY(-270deg) translateX(100px);
+  -webkit-transform-origin: top right;
+}
+
+.left{
+  -webkit-transform: rotateY(270deg) translateX(-100px); 
+  -webkit-transform-origin: center left;
+}
+
+.top{
+  -webkit-transform: rotateX(-90deg)
+    translateY(-100px);
+  -webkit-transform-origin: center;
+}
+
+.bottom{
+  -webkit-transform: rotateX(90deg)
+    translateY(100px);
+  -webkit-transform-origin: bottom center;
+}
+
+.front{
+  -webkit-transform: translateZ(100px);
+}
+
+@-webkit-keyframes typing {
+  from { width: 0 }
+  to { width: 7em }
+}
+
+@-webkit-keyframes blink{
+  from, to { border-color: transparent }
+  50% { border-color: black}
+}
+
+.logo_text{
+  position: center;
+  top: 20px;
+  left: 25%;
+  font-family: helvetica;
+  font-size: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .1em solid black;
+  line-height: 1px;
+  -webkit-animation: typing 2s steps
+    (13, end),blink 1s step-end infinite;
+}
+
+
+
+
+
+}
+
+
+
+    </style>
+        <bodybackground-image: url('wallpaper2.');  font-family: 'Roboto', sans-serif;>
+          <div class="example2">
+            <h1>Get In Touch!</h1>
+            </div>
+          <nav class="menu">
+            <ol>
+              <li class="menu-item"><a href="index.html">Home</a></li>
+              <li class="menu-item"><a href="demographics.html">About</a></li>
+              <li class="menu-item">
+                <a href="#0">Academic</a>
+                <ol class="sub-menu">
+                 <!--<li class="menu-item"><a href="academic_record.html">Academical Demographics</a></li>-->
+                  <li class="menu-item"><a href="intrests.html">Skills And Interests</a></li>
+                  
+                </ol>
+              </li>
+              <li class="menu-item">
+                <a href="#0">Projects</a>
+                <ol class="sub-menu">
+                  
+                  <li class="menu-item"><a href="ongoing.html">On-Going</a></li>
+                  <li class="menu-item"><a href="completed.html">Completed</a></li>
+                </ol>
+              </li>
+              <li class="menu-item"><a href="contact.html">Contact</a></li>
+            </ol>
+          </nav><br><br><br><br><br>
+          <footer>
+           
+            <section id="wrapper" align="center">
+     <div class="logo_text">
+      
+    </div>
+  <div class="cube-wrapper">
+    <div class="cube">
+      <div class="side front">Get</div>
+      <div class="side back">Touch</div>
+      <div class="side top"></div>
+      <div class="side bottom"></div>
+      <div class="side left">IN</div>
+      <div class="side right">With ME</div>
+    </div>
+  </div>
+</section><br><br><br><br><br><br><br><br>
+
+
+
+            
+            <center><a href="https://www.facebook.com/kabelo.morris.1" class="fa fa-facebook"> Facebook</a></center><br><br><br>
+            <center><font="Roboto">Email:</font></center>
+            <center><a href="mailto:morriskabeloteddy51@gmail.com" ><i class="material-icons">email</i>
+            <i class="material-icons" style="font-size:36px">email</i>
+            <i class="material-icons" style="font-size:48px;color:red">email</i></a></center><br><br>
+            
+            <center><a href="https://za.linkedin.com/in/kabelo-teddy-morris-27a187206"><i class="fa fa-linkedin-square"><i>LinkedIn:</i></i>
+            <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+            <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+            <i class="fa fa-linkedin-square" style="font-size:48px;color:red"></i></a></center>
+            <br>
+              
+              </a>  
+            </a>
+
+            <br><br><br><br><br><br><br><br><br><br>
+            
+                <footer>
+              <center><h5><i>copyright &copy; &nbsp; 2022 by Kabelo-Teddy Morris </h5></i></center>
+              </footer>
+              <script>
+               
+              var coll = document.getElementsByClassName("collapsible");
+              var i;
+              
+              for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var content = this.nextElementSibling;
+                  if (content.style.display === "block") {
+                    content.style.display = "none";
+                  } else {
+                    content.style.display = "block";
+                  }
+                });
+              }
+              </script>
+              
+              </body>
+              
+              </html>

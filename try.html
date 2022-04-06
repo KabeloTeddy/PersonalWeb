@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-repeat: no-repeat;
+  background-image: url("code.jpg");  
+  background-size: cover;  
+}	
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h1>ABOUT ME</H1>
+My Name Is Kabelo-Teddy Morris And I Am An Aspring Software Engineer!<br><br>
+Many Describe Me As A Sincere, Tenacous And Dedicated Tech-Savvy Enthusiast Individual Eager To Learn!
+
+<button type="button" class="collapsible">My Demographics</button>
+<div class="content">
+  <p>Born: 18 February 1999 </p>
+  <p>Home Town:  </p>
+</div>
+
+<p><h1>MORE ABOUT ME </H1></p>
+<button type="button" class="collapsible">ACADEMIC HISTORY</button>
+<div class="content">
+  <p>After High School In 2015, I Went On To Study Management Assistance At Vuselela TVET College For  Year (2016)  </p>
+<p>The Course Had A Lot To Do With Basci Computer Tasks And Within The Completion, I Had  A lOt Of Questions About How Computers Actually Work.</p>
+<p> I Was So Inquisitive That I Began Researching More And More ABout The Background Of Computers. <i>BACK-END</i>, <i>FRONT-END</i>, <i>FULLSTACK</i>, <i>PROGRAMMING LANGUAGES</i>, <i>DATABASE SYSTEMS</i>...These SOme Of The
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+
+
+</html>
